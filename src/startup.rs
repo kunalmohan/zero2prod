@@ -1,8 +1,8 @@
 use actix_web::dev::Server;
-use tracing_actix_web::TracingLogger;
 use actix_web::{App, HttpServer, web};
 use sqlx::PgPool;
 use std::net::TcpListener;
+use tracing_actix_web::TracingLogger;
 
 use crate::routes::*;
 
