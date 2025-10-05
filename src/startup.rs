@@ -74,6 +74,7 @@ pub fn run(
             .service(health_check)
             .service(subscribe)
             .service(confirm)
+            .service(publish_newsletter)
     })
     .listen(listener)?
     .run();

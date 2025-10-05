@@ -37,7 +37,7 @@ impl EmailClient {
         let request_body = SendEmailRequest {
             from: (&self.sender).into(),
             to: vec![recipient.into()],
-            subject: subject,
+            subject,
             html: html_content,
             text: text_content,
         };
